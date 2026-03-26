@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState, type JSX } from "react";
-import { createRoot } from "react-dom/client";
+import { useEffect, useRef, useState } from "react";
 import { fontSizeArr } from "../types/font-size.type";
 
 function useAccessibilityComponent() {
