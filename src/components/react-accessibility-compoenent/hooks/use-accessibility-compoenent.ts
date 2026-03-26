@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type JSX } from "react";
 import { createRoot } from "react-dom/client";
 import { fontSizeArr } from "../types/font-size.type";
 
-function useAccessibilityComponent({ shadowDomJsxElement }: { shadowDomJsxElement: JSX.Element; }) {
+function useAccessibilityComponent() {
     const hostRef = useRef<HTMLDivElement>(null);
     const [componentOpenClose, setcomponentOpenClose] = useState<boolean>(true);
 
@@ -10,11 +10,7 @@ function useAccessibilityComponent({ shadowDomJsxElement }: { shadowDomJsxElemen
         let openCloseComponentHandler: EventListenerOrEventListenerObject;
 
         if (hostRef.current && hostRef.current.shadowRoot === null) {
-            const shadowDom = hostRef.current?.attachShadow({ mode: 'open' });
-            if (shadowDom) {
-                const root = createRoot(shadowDom);
-                root.render(shadowDomJsxElement);
-            }
+            
 
             openCloseComponentHandler = (event: Event) => {
                 // TODO - Add your logic here
