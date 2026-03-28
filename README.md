@@ -22,7 +22,7 @@ yarn add react-accessibility-component
 
 Import and use the component in your React application:
 
-```
+```tsx
 import '@krasnoff/react-accessibility-component/dist/react-accessibility-component.css';
 import { AccessibilityComponent as AccessibilityComponentBase } from "@krasnoff/react-accessibility-component";
 
