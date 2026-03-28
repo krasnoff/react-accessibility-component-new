@@ -8,13 +8,13 @@
 
 To install the component, use npm or yarn:
 
-```bash
+```sh
 npm install react-accessibility-component
 ```
 
 or
 
-```bash
+```sh
 yarn add react-accessibility-component
 ```
 
