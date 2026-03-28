@@ -8,13 +8,13 @@
 
 To install the component, use npm or yarn:
 
-```
+```bash
 npm install react-accessibility-component
 ```
 
 or
 
-```
+```bash
 yarn add react-accessibility-component
 ```
 
@@ -55,7 +55,7 @@ export default App
 
 Alternatively, you can add the following css file to the `index.html` file in your project instead of importing it in the App component:
 
-```
+```html
 <link rel="stylesheet" href="node_modules/react-accessibility-component/dist/react-accessibility-component.css" />
 ```
 

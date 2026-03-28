@@ -1,7 +1,7 @@
 {
   "name": "@krasnoff/react-accessibility-component",
   "private": false,
-  "version": "1.0.7",
+  "version": "1.0.9",
   "homepage": "https://krasnoff-personal-web-app.vercel.app/",
   "description": "A React component library focused on accessibility, built with Vite and TypeScript.",
   "repository": {
