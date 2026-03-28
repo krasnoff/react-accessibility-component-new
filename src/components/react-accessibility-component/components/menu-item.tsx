@@ -13,4 +13,4 @@ const MenuItem: React.FC<MenuItemProps> = ({ title, ImageSvgComponent, fill }) =
     );
 };
 
-export default MenuItem;
+export { MenuItem };

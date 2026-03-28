@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './react-accessibility-component.module.scss';
-import AccessibilityLogo from './components/accessibility-logo';
-import useAccessibilityComponent from './hooks/use-accessibility-compoenent';
+import { AccessibilityLogo } from './components/accessibility-logo';
+import { useAccessibilityComponent } from './hooks/use-accessibility-compoenent';
 import { Template } from '@krasnoff/react-shadow-dom-component';
 
 const AccessibilityComponent: React.FC = () => { 
@@ -24,4 +24,4 @@ const AccessibilityComponent: React.FC = () => {
     );
 };
 
-export default AccessibilityComponent;
+export { AccessibilityComponent };

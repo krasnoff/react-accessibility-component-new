@@ -23,20 +23,37 @@ yarn add react-accessibility-component
 Import and use the component in your React application:
 
 ```
-import { AccessibilityComponent } from 'react-accessibility-component'
+import '@krasnoff/react-accessibility-component/dist/react-accessibility-component.css';
+import { AccessibilityComponent as AccessibilityComponentBase } from "@krasnoff/react-accessibility-component";
+
+const AccessibilityComponent = AccessibilityComponentBase as React.FC<React.PropsWithChildren>;
 
 function App() {
+    // need to implement this handler to listen to the events emitted by the accessibility component
+    useEffect(() => {
+      const handler = (e: Event) => {
+        const { message, value } = (e as CustomEvent).detail;
+        console.log(message, value);
+        // message can be: "OpenCloseComponent", "grayScale", "contrast",
+        // "fontSizeIndex", "brightBackground", "readableFonts",
+        // "markHyperlinks", "listsMark", "titlesMark"
+      };
+      window.addEventListener("shadow-click", handler);
+      return () => window.removeEventListener("shadow-click", handler);
+    }, []);
+
     return (
-    <AccessibilityComponent>
-      <h1>Vite + React to NPM repository</h1>
-    </AccessibilityComponent>
+      <>
+        <h1>Vite + React to NPM repository</h1>
+        </AccessibilityComponent />
+      </>
   )
 }
 
 export default App
 ```
 
-Now add the following css file to the `index.html` file in your project:
+Alternatively, you can add the following css file to the `index.html` file in your project instead of importing it in the App component:
 
 ```
 <link rel="stylesheet" href="node_modules/react-accessibility-component/dist/react-accessibility-component.css" />

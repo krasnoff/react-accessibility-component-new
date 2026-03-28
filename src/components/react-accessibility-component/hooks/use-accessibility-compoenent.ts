@@ -151,4 +151,4 @@ function useAccessibilityComponent() {
     }
 }
 
-export default useAccessibilityComponent;
+export { useAccessibilityComponent };

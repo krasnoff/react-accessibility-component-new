@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
-import AccessibilityComponent from './react-accessibility-component';
+import { AccessibilityComponent } from './react-accessibility-component';
 
 const meta = {
   title: 'Accessibility/ReactAccessibilityComponent',

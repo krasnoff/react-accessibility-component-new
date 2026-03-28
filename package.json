@@ -1,8 +1,12 @@
 {
-  "name": "react-vite-npm-template",
+  "name": "@krasnoff/react-accessibility-component",
   "private": false,
-  "version": "0.0.3",
-  "description": "A React Vite component library template with Storybook, Vitest, and Playwright setup. for developing components to be destributed in NPM registry.",
+  "version": "1.0.6",
+  "description": "A React component library focused on accessibility, built with Vite and TypeScript.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krasnoff/vite-react-ts-component.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,7 +36,7 @@
     "vite",
     "component-library"
   ],
-  "author": "",
+  "author": "Your Name <krasnoff.kobi@gmail.com> (https://krasnoff-personal-web-app.vercel.app/)",
   "license": "MIT",
   "peerDependencies": {
     "react": ">=18",

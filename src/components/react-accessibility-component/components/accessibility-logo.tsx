@@ -11,7 +11,7 @@ import ReadableFontsSvg from '../assets/text_format_24dp_5F6368_FILL0_wght400_GR
 import HeadersSvg from '../assets/format_h1_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg?react';
 import ListSvg from '../assets/list_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg?react';
 
-import MenuItem from './menu-item';
+import { MenuItem } from './menu-item';
 import { useEffect, useState } from 'react';
 import { FontSizeDirection } from '../enums/font-size-direction.enum';
 interface AccessibilityLogoProps {
@@ -236,4 +236,4 @@ const AccessibilityLogo = (props: AccessibilityLogoProps) => {
     </>);
 } 
 
-export default AccessibilityLogo;
+export { AccessibilityLogo };
